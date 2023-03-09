@@ -1,6 +1,6 @@
 Feature: Refine Functionality
 
-  @Ref
+  @Ref @ALL
   Scenario Outline: Refine by Product Category
     Given user opens browser and navigate to <url>
     Then user entering <searchText>

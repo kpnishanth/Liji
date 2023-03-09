@@ -1,5 +1,6 @@
 package Utilities;
 
+import io.cucumber.java.After;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,8 +19,14 @@ public class DriverManagement {
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
         }
         return driver;
+    }
+    @After
+    public void tearDown(){
+        driver.quit();
+        driver=null;
     }
 }
 

@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 (
         features="src/test/Features",
         glue = ".",
-        tags = "@Shop",
+        tags = "@Login",
         plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json"}
 
 
