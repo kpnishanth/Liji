@@ -8,8 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class CommonMethods {
     protected static WebDriver driver;
     public CommonMethods(){
-        driver=DriverManagement.getDriver();
-
+      driver=DriverManagement.getDriver();
     }
     public void clickAnElement(String locator,String locatorType){
         if (locatorType.equals("xpath")) {
