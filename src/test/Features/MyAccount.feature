@@ -7,6 +7,7 @@
       And user clicks on google search button
       Then user clicks <search text1>
       Then user clicks on my account
+
       Then user closes the ad window
       Then user enters valid email address for register <email>
       Then user enters password for register <password>
