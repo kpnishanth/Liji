@@ -31,6 +31,7 @@ public class GoogleButton {
             }else {
                 driver.close();
             }
+            System.out.println("closed the browser");
 
 
                 //driver.findElement(By.name("q")).sendKeys("georgia state");
