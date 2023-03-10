@@ -1,6 +1,7 @@
 package Utilities;
 
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,6 +28,11 @@ public class DriverManagement {
     public void tearDown(){
         driver.quit();
         driver=null;
+    }
+    @Before
+    public void startUp()
+    {
+        System.out.println("About the start the testexecution");
     }
 }
 
